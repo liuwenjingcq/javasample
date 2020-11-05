@@ -1,4 +1,4 @@
-package com;
+package com.exception;
 
 public class MainExceptionV3 {
     //第一行打印了catched，说明进入了catch语句块。第二行打印了finally，说明执行了finally语句块。

@@ -1,4 +1,4 @@
-package com;
+package com.exception;
 //新的异常持有原始的exception信息
 // Caused by: Xxx，说明捕获的IllegalArgumentException并不是造成问题的根源，根源在于NullPointerException，
 // 是在Main.process2()方法抛出的。

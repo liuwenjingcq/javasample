@@ -1,12 +1,13 @@
 package com;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+//import org.apache.commons.logging.Log;
+//import org.apache.commons.logging.LogFactory;
 
 public class MainLog {
     public static void main(String[] args) {
-        Log log = LogFactory.getLog(MainLog.class);
-        log.info("start...");
-        log.warn("end.");
+//        Log log = LogFactory.getLog(MainLog.class);
+//        log.info("start...");
+//        log.warn("end.");
+        System.out.println("需要引入外部包");
     }
 }
 

@@ -1,4 +1,4 @@
-package com;
+package com.exception;
 
 import javax.print.attribute.standard.MediaSize;
 //新的异常丢失了原始异常信息，看不到原始异常NullPointerException的信息了，改成v2

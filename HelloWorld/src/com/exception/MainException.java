@@ -1,4 +1,4 @@
-package com;
+package com.exception;
 
 import com.sun.jdi.PathSearchingVirtualMachine;
 
