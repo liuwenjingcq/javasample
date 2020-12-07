@@ -1,0 +1,30 @@
+collections 是jdk提供的工具类，位于java.util包，提供一系列静态方法，能更方便操作各种集合
+
+创建空集合
+创建空List：List<T> emptyList()
+创建空Map：Map<K, V> emptyMap()
+创建空Set：Set<T> emptySet()
+要注意到返回的空集合是不可变集合，无法向其中添加或删除元素
+可以用各个集合接口提供的of(T...)方法创建空集合。例如，以下创建空List的两个方法是等价的：
+List<String> list1 = List.of();
+List<String> list2 = Collections.emptyList();
+
+创建单元素集合
+Collections提供了一系列方法来创建一个单元素集合：
+创建一个元素的List：List<T> singletonList(T o)
+创建一个元素的Map：Map<K, V> singletonMap(K key, V value)
+创建一个元素的Set：Set<T> singleton(T o)
+要注意到返回的单元素集合也是不可变集合，无法向其中添加或删除元素。
+
+此外，也可以用各个集合接口提供的of(T...)方法创建单元素集合。例如，以下创建单元素List的两个方法是等价的：
+
+List<String> list1 = List.of("apple");
+List<String> list2 = Collections.singletonList("apple");
+实际上，使用List.of(T...)更方便，因为它既可以创建空集合，也可以创建单元素集合，还可以创建任意个元素的集合：
+
+List<String> list1 = List.of(); // empty list
+List<String> list2 = List.of("apple"); // 1 element
+List<String> list3 = List.of("apple", "pear"); // 2 elements
+List<String> list4 = List.of("apple", "pear", "orange"); // 3 elements
+
+
